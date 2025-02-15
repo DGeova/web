@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto </title>
+    <link rel="stylesheet" href="F1.css">
+</head>
+<body>
+    <header>
+        <h1>💖 Génesis 💖</h1>
+        <p>Un rincón especial para celebrar el amor y la fe</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#poemas">Poemas</a></li>
+            <li><a href="#musica">Música</a></li>
+            <li><a href="#versiculo">Versículo para Ti</a></li>
+            <li><a href="#frases">Frases para Ti</a></li>
+            <li><a href="para ti.html">para ti</a></li>
+        </ul>
+    </nav>
+
+    <section id="poemas">
+        <h2>💌 Poemas de Amor 💌</h2>
+        <div class="poema">
+            <h3>“Eres mi inspiración”</h3>
+            <p>En cada latido de mi corazón,  
+            resuena tu dulce voz,  
+            eres la luz en mi sendero,  
+            mi más bello amanecer.</p>
+        </div>
+    </section>
+
+    <section id="musica">
+        <h2>🎶 Músiquita bien romantica  🎶</h2>
+                💓
+                <a href="">
+                    <button type="button">escuchar</button>
+                </a>💓 
+        
+    </section>
+
+    <section id="versiculo">
+        <h2>📖 Versículo para Ti 📖</h2>
+        <p id="versiculo-texto">"El amor es paciente, es bondadoso. - 1 Corintios 13:4"</p>
+        <button onclick="cambiarVersiculo()">🔄 Nuevo Versículo</button>
+    </section>
+
+    <section id="frases">
+        <h2>💬 Frases para Ti 💬</h2>
+        <p id="frase-texto">"El amor no se mira con los ojos, sino con el alma." - William Shakespeare</p>
+        <button onclick="cambiarFrase()">🔄 Nueva Frase</button>
+    </section>
+
+    <footer>
+        <p>❤️ Hecho con amor para genesitap ❤️</p>
+    </footer>
+
+   <script>// Versículos
+    const versiculos = [
+        "El amor es paciente, es bondadoso. - 1 Corintios 13:4",
+        "Y sobre todo, revístanse de amor, que es el vínculo perfecto. - Colosenses 3:14",
+        "Nosotros amamos porque él nos amó primero. - 1 Juan 4:19",
+        "Hagan todo con amor. - 1 Corintios 16:14"
+    ];
+    
+    function cambiarVersiculo() {
+        let index = Math.floor(Math.random() * versiculos.length);
+        document.getElementById("versiculo-texto").innerText = versiculos[index];
+    }
+    
+    // Frases
+    const frases = [
+        "El amor no se mira con los ojos, sino con el alma. - William Shakespeare",
+        "Donde hay amor, hay vida. - Mahatma Gandhi",
+        "El amor verdadero no tiene final feliz, porque simplemente no tiene final.",
+        "Ama sin medida, sin límites, sin condiciones, sin complejos, sin permiso, sin cura y sin miedo."
+    ];
+    
+    function cambiarFrase() {
+        let index = Math.floor(Math.random() * frases.length);
+        document.getElementById("frase-texto").innerText = frases[index];
+    }
+    </script>
+</body>
+</html>
